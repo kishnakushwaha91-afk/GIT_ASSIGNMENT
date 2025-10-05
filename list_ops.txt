@@ -1,0 +1,71 @@
+"""Q4|: Write a menu driven program to perform various list operations, such as:
+1. Append an element
+2. Insert an element at the desired position
+3. Append a list to the given list
+4. Modify an existing element
+5. Delete an existing element by its position
+6. Delete an existing element by its value
+7. Sort the list in ascending order
+8. Sort the list in descending order
+9. Display the list
+10.Exit
+#Q4"""
+
+l=[1,2,3]
+while(True):
+
+    choice=int(input("Enter a choice"))
+    if(choice==1):
+    #1
+        v=int(input("Enter a number "))
+        l.append(v)
+        print(l)
+
+    elif(choice==2):
+    #2
+        v=int(input("Enter a number "))
+        loc=int(input("Enter the desired location "))
+        l.insert(loc,v)
+        print(l)
+
+    elif(choice==3):
+    #3
+        v=input("Enter a list ")
+        l.append(v)
+        print(l)
+
+    elif(choice==4):
+    #4
+        v=int(input("Enter an element to modify "))
+        l.remove(v)
+        print(l)
+
+    elif(choice==5):
+    #5
+        v=int(input("Enter an index of an element to delete "))
+        l.pop(v)
+        print(l)
+
+    elif(choice==6):
+    #6
+        v=int(input("Enter an element to delete "))
+        l.remove(v)
+        print(l)
+
+    elif(choice==7):
+    #7
+        l.sort()
+        print(l)
+
+    elif(choice==8):
+    #8
+        l.sort()
+        l.reverse()
+        print(l)
+
+    elif(choice==9):
+    #9
+        print(l)
+
+    elif(choice==10):
+        break
