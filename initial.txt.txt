@@ -57,3 +57,20 @@ while True:
       print("invalid!!!....Enter Only Numbers...")
   else:
     print("Invalid choice, choose between:[1-5]")
+
+
+"""Below this line the new code is added as per the requirement of the assingment which is:
+"- Make changes to `initial.txt` on the remote repository via the GitHub web interface (e.g., add a new line)."
+
+----------------------------This is the new code added in the line-----------------------------
+"""
+Q 3: Write a Python Program To Display Powers of 2 Using Anonymous Function
+( Lambda function). Take number of terms from user.
+
+
+sqr = lambda x: x*x
+num = int(input("enter the number for sqr: "))
+print(sqr(num))
+
+#lambda item: expression
+#map(lambda item: expression, iterable)
