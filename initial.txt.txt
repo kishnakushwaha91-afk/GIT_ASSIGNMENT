@@ -1,0 +1,59 @@
+"""Write a menu driven Program to make a simple calculator that can add, subtract, multiply and divide
+using functions"""
+
+
+
+def addition(x,y):
+  return x+y
+
+def substract(x,y):
+  return x-y
+
+def mul(x,y):
+  return x*y
+
+def div(x,y):
+  if y == 0:
+    print("can not divde bby zero")
+  else:
+    return x/y
+
+
+print("welcome to the simple calculator")
+print('select your desired operation: [1-5]')
+print("1:addition")
+print("2:Subtraction")
+print("3:multiply")
+print("4:division")
+print("5:exit")
+
+while True:
+  choice =input("Enter your choice: ")
+
+  if choice == '5':
+    print('Thank you for using this calculator')
+    break
+
+  if choice in ('1','2','3','4'):
+    try:
+      num1 = float(input("Enter the first number "))
+      num2 = float(input("Enter the second number "))
+
+      if choice == '1':
+          result = addition(num1, num2)
+          print(f'Addition is:{num1} + {num2} = {result}')
+
+      elif choice == '2':
+        result = substract(num1, num2)
+        print(f'Subtraction is:{num1} - {num2} = {result}')
+      elif choice == '3':
+        result = mul(num1,num2)
+        print(f'Multiplication is: {num1}*{num2} = {result}')
+      elif choice == '4':
+        result = div(num1,num2)
+        print(f'divion is: {num1}/{num2} = {result}')
+
+    except ValueError:
+      print("invalid!!!....Enter Only Numbers...")
+  else:
+    print("Invalid choice, choose between:[1-5]")
