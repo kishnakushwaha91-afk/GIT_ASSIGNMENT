@@ -1,0 +1,3 @@
+This text is for performing first staging and unstaging step.
+
+This text is to modify this text file after unstaging it,now i will stage it again.
