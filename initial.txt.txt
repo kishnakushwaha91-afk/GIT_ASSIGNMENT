@@ -80,3 +80,6 @@ print(sqr(num))
 Question:4-B :-
 "- Create a commit on `main` with changes to `initial.txt`.
 "
+# Added line 1 — For partial staging demo
+# Added line 2 — For reset demo
+# Update for Docker classwork branch
