@@ -1,1 +1,4 @@
 MLops file
+# Updated in b3_sql branch
+# Added some SQL notes
+Select * from sql
