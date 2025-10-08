@@ -23,3 +23,9 @@ git merge main
 git stash push -m "Temporary save"
 git stash pop
 git revert <commit_id>
+
+
+**AUTHOR**
+Kishna Kushwaha
+Engineer | AI + Data Science Learne
+kishnakushwaha91@gmail.com
